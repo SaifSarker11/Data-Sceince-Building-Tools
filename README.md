@@ -4,7 +4,7 @@ A comprehensive educational resource for learning essential Python libraries use
 
 ## 📚 Overview
 
-This repository contains interactive Jupyter notebooks covering fundamental data science tools including **NumPy** and **Pandas**. Each notebook provides hands-on examples, code snippets, and explanations for working with data in Python.
+This repository contains interactive Jupyter notebooks covering fundamental data science tools including **NumPy**, **Pandas**, and **Matplotlib**. Each notebook provides hands-on examples, code snippets, and explanations for working with data in Python.
 
 ## 🗂️ Project Structure
 
@@ -12,8 +12,9 @@ This repository contains interactive Jupyter notebooks covering fundamental data
 Data-Sceince-Building-Tools/
 ├── README.md
 └── libraries/
-    ├── Numpy.ipynb      # NumPy library tutorials
-    └── Pandas.ipynb     # Pandas library tutorials
+    ├── Numpy.ipynb        # NumPy library tutorials
+    ├── Pandas.ipynb       # Pandas library tutorials
+    └── Matplotlib.ipynb   # Matplotlib library tutorials
 ```
 
 ## 📖 Contents
@@ -69,29 +70,47 @@ Master data manipulation and analysis with Pandas:
   - Merging: `pd.merge()` with inner, left, right, and outer joins
 - **Importing Files**: Reading Excel files with `pd.read_excel()`
 
+### Matplotlib (`libraries/Matplotlib.ipynb`)
+Create stunning data visualizations with Matplotlib:
+
+- **Univariate (Numerical)**:
+  - **Line Plot**: `plt.plot()` with markers, colors, and linestyles
+  - **Histogram**: `plt.hist()` for frequency distribution
+  - **Box Plot**: `plt.boxplot()` for statistical summaries
+- **Univariate (Categorical)**:
+  - **Bar Chart**: `plt.bar()` and `plt.barh()` for categorical comparisons
+  - **Pie Chart**: `plt.pie()` for proportional data
+- **Bivariate**:
+  - **Scatter Plot**: `plt.scatter()` for relationship between two variables
+  - **Multi-group Box Plot**: Comparing distributions across categories
+- **Plot Customization**:
+  - Titles, axis labels, grids
+  - Colors, markers, linestyles
+  - Legends and annotations
+- **Subplots**: `plt.subplot()` and `plt.subplots()` for multi-panel figures
+- **Object-Oriented API**: Using `Figure` and `Axes` objects for fine-grained control
+- **Interactive 3D Plots**: `px.scatter_3d()` using Plotly Express
+
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Python 3.x
 - Jupyter Notebook or JupyterLab
 - Required packages:
-  
-```
-bash
-  pip install numpy pandas
-  
+
+```bash
+pip install numpy pandas matplotlib plotly nbformat
 ```
 
 ### Running the Notebooks
 1. Clone or download this repository
 2. Navigate to the project directory
 3. Start Jupyter Notebook:
-   
+
+```bash
+jupyter notebook
 ```
-bash
-   jupyter notebook
-   
-```
+
 4. Open the desired notebook from the `libraries/` folder
 5. Run the cells to learn and experiment
 
@@ -99,6 +118,7 @@ bash
 
 - Start with **NumPy** to understand the basics of numerical computing in Python
 - Move on to **Pandas** to learn data manipulation and analysis
+- Finish with **Matplotlib** to visualize your data effectively
 - Run each cell in the notebooks to see the output
 - Modify the code examples to experiment with different parameters
 - Refer to the official documentation for more in-depth information
@@ -107,6 +127,8 @@ bash
 
 - [NumPy Documentation](https://numpy.org/doc/)
 - [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [Matplotlib Documentation](https://matplotlib.org/stable/index.html)
+- [Plotly Documentation](https://plotly.com/python/)
 - [Python Official Documentation](https://docs.python.org/3/)
 
 ## 📄 License
@@ -115,4 +137,4 @@ This project is for educational purposes. Feel free to use and modify as needed.
 
 ---
 
-Happy Learning! 📊🐼
+Happy Learning! 📊🐼📈
